@@ -1,0 +1,80 @@
+<canvas id="canvas" width="500" height="500"></canvas>
+<script>
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  if (canvas.getContext) {
+
+    var ctx = canvas.getContext('2d');
+    //Triangulos
+    //Primer Triangulo
+    ctx.beginPath();
+    ctx.moveTo(150, 160);
+    ctx.lineTo(70, 145);
+    ctx.lineTo(150, 250);
+    ctx.fillStyle = '#009933';
+    ctx.fill();
+//Segundo Triangulo
+    ctx.beginPath();
+    ctx.moveTo(220, 230);
+    ctx.lineTo(150, 260);
+    ctx.lineTo(150, 350);
+    ctx.fillStyle = '#003300';
+    ctx.fill();
+//Tercer Triangulo
+    ctx.beginPath();
+    ctx.moveTo(220, 360);
+    ctx.lineTo(70, 375);
+    ctx.lineTo(150, 390);
+    ctx.fillStyle = '#006600';
+    ctx.fill();
+    ctx.save();
+    //Poliedro
+//Primera Cara
+    ctx.beginPath();
+    ctx.moveTo(150, 60);
+    ctx.lineTo(70, 45);
+    ctx.lineTo(150, 150);
+    ctx.fillStyle = '#009933';
+    ctx.fill();
+//Segunda Cara
+    ctx.beginPath();
+    ctx.moveTo(220, 30);
+    ctx.lineTo(150, 60);
+    ctx.lineTo(150, 150);
+    ctx.fillStyle = '#003300';
+    ctx.fill();
+//Tercera Cara
+    ctx.beginPath();
+    ctx.moveTo(220, 30);
+    ctx.lineTo(70, 45);
+    ctx.lineTo(150, 60);
+    ctx.fillStyle = '#006600';
+    ctx.fill();
+    ctx.save();
+    //poliedro transformado
+    //Primera Cara
+    ctx.beginPath();
+    ctx.moveTo(350, 60);
+    ctx.lineTo(270, 190);
+    ctx.lineTo(350, 150);
+    ctx.fillStyle = '#009933';
+    ctx.fill();
+//Segunda Cara
+    ctx.beginPath();
+    ctx.moveTo(430, 190);
+    ctx.lineTo(350, 60);
+    ctx.lineTo(350, 150);
+    ctx.fillStyle = '#003300';
+    ctx.fill();
+//Tercera Cara
+    ctx.beginPath();
+    ctx.moveTo(430, 190);
+    ctx.lineTo(270, 190);
+    ctx.lineTo(350, 150);
+    ctx.fillStyle = '#006600';
+    ctx.fill();
+   
+  }
+  }
+draw();
+</script>
